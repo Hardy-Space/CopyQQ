@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.hardy.person.copyqq.pull_load_refresh_util.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/refresh_head"/>
+        <!--最多只能有下拉刷新头布局、内容、加载更多底部布局三个子标签-->
+        <!--<include layout="@layout/contact_item0_layout"/>-->
+        <com.hardy.person.copyqq.pull_load_refresh_util.PullableExpandableListView
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/editBack"
+            android:divider="@color/loginBack"
+            android:dividerHeight="1dp"
+            android:childDivider="@color/loginBack"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@drawable/scrollbar_thumb_shape"
+            />
+        <include layout="@layout/load_more"/>
+
+    </com.hardy.person.copyqq.pull_load_refresh_util.PullToRefreshLayout>
+
+
+
+
+</LinearLayout>

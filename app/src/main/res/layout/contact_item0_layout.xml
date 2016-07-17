@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<!--
+    搜索框
+-->
+    <TextView
+        android:id="@+id/search_contact"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:background="@drawable/search_background"
+        android:text="@string/searchText"
+        android:textSize="12sp"
+        android:textColor="#6E5974"
+        android:drawableLeft="@drawable/search"/>
+<!--
+    横向排列的四个TextView
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/newFriend"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/contactItem0_1"
+            android:background="@drawable/pressed_unpressed"
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:drawableTop="@drawable/newfriend"/>
+        <TextView
+            android:id="@+id/specialCare"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/pressed_unpressed"
+            android:text="@string/contactItem0_2"
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:drawableTop="@drawable/heart"
+            />
+        <TextView
+            android:id="@+id/qunliao"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/pressed_unpressed"
+            android:text="@string/contactItem0_3"
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:drawableTop="@drawable/qunliao"
+            />
+        <TextView
+            android:id="@+id/gongzhonghao"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/pressed_unpressed"
+            android:text="@string/contactItem0_4"
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:drawableTop="@drawable/earth"/>
+    </LinearLayout>
+<!--
+    分割线布局
+-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/loginBack"/>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/peoplesChat"
+        android:title="@string/peoplesChat"
+        android:icon="@drawable/peopleschat"
+        />
+    <item
+        android:id="@+id/addFriend"
+        android:title="@string/addFriend"
+        android:icon="@drawable/addfriend"
+        />
+    <item
+        android:id="@+id/sweep"
+        android:title="@string/sweep"
+        android:icon="@drawable/sweep"
+        />
+    <item
+        android:id="@+id/sendToPC"
+        android:title="@string/sendToPC"
+        android:icon="@drawable/to_pc"
+        />
+    <item
+        android:id="@+id/faceToface"
+        android:title="@string/faceToface"
+        android:icon="@drawable/face_to_face"
+        />
+    <item
+        android:id="@+id/pay"
+        android:title="@string/pay"
+        android:icon="@drawable/pay"
+        />
+
+</menu>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="100dp"
+    android:background="@color/realLoginColor"
+    tools:context=".activities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/headPortrait"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/default_head_portrait"
+        />
+
+    <EditText
+        android:id="@+id/userNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headPortrait"
+        android:layout_marginTop="20dp"
+        android:padding="2dp"
+        android:maxLines="1"
+        android:inputType="number"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:hint="@string/userNameHint"
+        android:textColorHint="@android:color/darker_gray"
+        android:selectAllOnFocus="true"
+        android:background="@drawable/edittext_shape"
+        />
+<!--
+    用作两个输入框之间的分割线
+-->
+    <TextView
+        android:id="@+id/divider"
+        android:layout_below="@id/userNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/loginBack"/>
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:padding="2dp"
+        android:maxLines="1"
+        android:password="true"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:hint="@string/passwordHint"
+        android:textColorHint="@android:color/darker_gray"
+        android:selectAllOnFocus="true"
+        android:background="@drawable/edittext_shape"
+        />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_below="@id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="@drawable/button_shape"
+        android:text="@string/loginButtonText"/>
+
+    <TextView
+        android:id="@+id/qqLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="30dp"
+        android:text="QQ号登录"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:text="@string/forgotPassword"
+            android:textColor="@color/linkTextColor"
+            />
+
+        <TextView
+            android:id="@+id/toRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="@string/register"
+            android:textColor="@color/linkTextColor"
+
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

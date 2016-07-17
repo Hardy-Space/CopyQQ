@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#29C1E8</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="touming">#00000000</color>
+    <color name="loginBack">#F7F6F6</color>
+    <color name="realLoginColor">#EEE8AA</color>
+    <color name="editBack">#FFFFFF</color>
+    <color name="linkTextColor">#29C1E8</color>
+    <color name="mainBack">#FFFFFF</color>
+    <color name="drawerBack">#29C1E8</color>
+    <color name="navigationSelectedTextColor">#239be8</color>
+    <color name="textBlack">#000000</color>
+    <color name="pressed">#EEDFCC</color>
+</resources>

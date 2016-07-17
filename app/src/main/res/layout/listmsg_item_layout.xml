@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <!--
+    搜索框,只在第一项出现
+-->
+    <TextView
+        android:id="@+id/search_msg"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/search_background"
+        android:drawableLeft="@drawable/search"
+        android:gravity="center"
+        android:text="@string/searchText"
+        android:textColor="#6E5974"
+        android:textSize="12sp"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pressed_unpressed"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/msgHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/msgName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/msgHead"
+            android:textColor="@color/textBlack"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/msgContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/msgHead"
+            android:textColor="#A0929B"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/msgTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/msgName"
+            android:layout_alignParentRight="true"
+            android:textColor="#A0929B"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

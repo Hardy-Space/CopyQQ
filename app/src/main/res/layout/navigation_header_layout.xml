@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/header_bacground"
+                android:paddingTop="50dp"
+                >
+
+    <ImageView
+        android:id="@+id/headPortrait"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_head_portrait"
+        />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/headPortrait"
+        android:text="昵称"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/nickname"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/headPortrait"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/er_wei_ma"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headPortrait"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="我的个性签名"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"/>
+</RelativeLayout>

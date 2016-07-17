@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--DrawerLayout实现侧滑栏
+    <include layout="@layout/drawer_layout"/>-->
+
+    <!--通过扒SlideMenu的源码可知，SlideMenu是利用ViewGroup来作为ViewAbove和
+    ViewBehind的容器，而这里的ViewAbove和ViewBehind就是分别代表我们的主界面
+    布局文件和菜单布局文件。而通过查阅资料我们发现，沉浸式状态栏是仅仅支持Layout
+    和TextView等几种控件的沉浸效果的，而且如果Layout里面的第一个控件为ImageView，
+    沉浸效果也是无法实现的-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        />
+    <!--SlidingMenu实现侧滑栏-->
+    <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/slidingMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:behindOffset="70dp"
+        app:behindScrollScale="0.5"
+        app:fadeEnabled="false"
+        app:mode="left"
+        app:touchModeAbove="fullscreen"
+        app:touchModeBehind="fullscreen"
+        app:viewAbove="@layout/sliding_main_layout"
+        app:viewBehind="@layout/sliding_leftmenu_layout"
+        />
+</LinearLayout>

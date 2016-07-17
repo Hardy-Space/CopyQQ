@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.hardy.person.copyqq.pull_load_refresh_util.PullToRefreshLayout
+        android:id="@+id/refresh_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/refresh_head"/>
+        <com.hardy.person.copyqq.pull_load_refresh_util.PullableListView
+            android:id="@+id/list_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/editBack"
+            android:divider="@color/loginBack"
+            android:dividerHeight="1dp"
+            android:scrollbarThumbVertical="@drawable/scrollbar_thumb_shape"
+            ></com.hardy.person.copyqq.pull_load_refresh_util.PullableListView>
+        <include layout="@layout/load_more"/>
+    </com.hardy.person.copyqq.pull_load_refresh_util.PullToRefreshLayout>
+
+</LinearLayout>

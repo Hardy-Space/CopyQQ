@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/topView_menu"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/header_bacground"/>
+    <!--<android.support.design.widget.NavigationView
+        android:id="@+id/nav_sliding"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="@color/drawerBack"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/navigation_header_layout"
+        app:menu="@menu/nav_menu"
+        />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/header_bacground"
+        android:paddingTop="50dp">
+
+        <ImageView
+            android:id="@+id/SheadPortrait"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/Snickname"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:text="昵称"
+            android:layout_toRightOf="@id/SheadPortrait"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/Snickname"
+            android:layout_toRightOf="@id/SheadPortrait"
+            android:layout_marginTop="10dp"
+            android:progress="200"
+            android:max="255"
+            android:numStars="5"
+            android:stepSize="0.5"
+            style="?android:attr/ratingBarStyleSmall"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/er_wei_ma"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SheadPortrait"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="个性签名：每一行代码都自具威力..."
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@drawable/menu_list_back"
+        android:divider="@null"
+        >
+    </ListView>
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="30dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/setting"
+        android:background="@drawable/menu_list_back"
+        android:gravity="left|center_vertical"
+        android:text="设置"
+        android:textSize="15sp"/>
+
+</LinearLayout>

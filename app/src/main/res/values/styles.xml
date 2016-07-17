@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeParent" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@android:color/black</item>
+        <item name="android:textColorPrimary">@color/textBlack</item>
+    </style>
+<!--
+    应用主题样式
+-->
+    <style name="AppTheme" parent="AppThemeParent">
+        <item name="android:popupMenuStyle">@style/MyPopupStyle</item>
+    </style>
+<!--
+    弹出菜单样式
+-->
+    <style name="MyPopupStyle" parent="Base.Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@color/drawerBack</item>
+        <!--<item name="android:textAppearance">@style/PopupTextColor</item>-->
+        <!--弹出框离触发源的垂直距离-->
+        <item name="android:dropDownVerticalOffset">5dp</item>
+    </style>
+    <style name="PopupTextColor">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <!--不管用-->
+    <style name="MyRatingBarStyle" parent="Base.Widget.AppCompat.RatingBar">
+        <item name="android:maxHeight">20dp</item>
+        <item name="android:maxWidth">20dp</item>
+    </style>
+
+
+
+</resources>

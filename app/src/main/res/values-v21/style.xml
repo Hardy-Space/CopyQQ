@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="AppThemeParent">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!--一般状态栏的颜色-->
+        <item name="android:statusBarColor">@color/touming</item>
+        <item name="android:popupMenuStyle">@style/MyPopupStyle</item>
+        <!--设置了这个，状态栏的颜色就会和当前窗口的最外层的布局的颜色一样-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+
+</resources>
